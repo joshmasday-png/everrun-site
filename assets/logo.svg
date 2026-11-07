@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="30 0 285 216" width="285" height="216" role="img" aria-label="Everrun">
+  <defs>
+    <linearGradient id="er-e" gradientUnits="userSpaceOnUse" x1="50" y1="200" x2="190" y2="60">
+      <stop offset="0" stop-color="#10233D"/>
+      <stop offset="1" stop-color="#1D4266"/>
+    </linearGradient>
+    <linearGradient id="er-tail" gradientUnits="userSpaceOnUse" x1="160" y1="195" x2="280" y2="10">
+      <stop offset="0" stop-color="#132B45"/>
+      <stop offset="0.3" stop-color="#1D4266"/>
+      <stop offset="0.5" stop-color="#A9823A"/>
+      <stop offset="1" stop-color="#E2C47E"/>
+    </linearGradient>
+  </defs>
+  <path d="M48 128H188A70 70 0 1 0 118 198" fill="none" stroke="url(#er-e)" stroke-width="25" stroke-linejoin="round"/>
+  <path d="M117 198C185 198 238 150 262 62" fill="none" stroke="url(#er-tail)" stroke-width="25"/>
+  <path d="M237 55L277 6L287 69Z" fill="url(#er-tail)" stroke="url(#er-tail)" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="none" stroke="#B8913A" stroke-width="5" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M248 112H288"/>
+    <circle cx="298" cy="112" r="9"/>
+    <path d="M226 148H262L274 160"/>
+    <circle cx="281" cy="167" r="9"/>
+    <path d="M200 172L226 196H240"/>
+    <circle cx="250" cy="196" r="9"/>
+  </g>
+</svg>
