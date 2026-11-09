@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Everrun — Systems that never stop working</title>
-<meta name="description" content="Everrun is a Singapore AI automation studio. We build lead follow-up, voice agents, support assistants, CRM sync and multi-agent systems for growing businesses.">
+<title>Everrun — Your business, on autopilot</title>
+<meta name="description" content="Everrun is a Singapore AI automation agency. We build lead follow-up, voice agents, support assistants, CRM sync and multi-agent systems for growing businesses.">
 <link rel="icon" type="image/png" href="assets/favicon.png?v=5">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=5">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;550;600;650&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=5">
+<link rel="stylesheet" href="assets/site.css?v=6">
 <style>
   /* ---- HERO ---- */
   #hero { padding: 168px 0 0; position: relative; overflow: hidden; }
@@ -25,8 +25,16 @@
   }
   .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 72px; align-items: center; position: relative; }
   #hero .label { margin-bottom: 30px; }
+  .hero-badge {
+    display: inline-flex; align-items: center; gap: 8px; margin-bottom: 26px;
+    padding: 6px 14px 6px 10px; border-radius: 999px;
+    background: rgba(233,231,225,0.08);
+    font-size: 14.5px; font-weight: 550; letter-spacing: -0.005em; color: #E9E7E1;
+  }
+  .hero-badge .ico { font-size: 15px; line-height: 1; }
+  .hero-badge .sep { color: var(--gold-lt); font-size: 18px; line-height: 0; }
   #hero h1 { color: #F4F2EC; }
-  #hero h1 .serif { font-family: inherit; font-weight: inherit; font-style: normal; letter-spacing: inherit; color: var(--gold-lt); }
+  #hero h1 .serif { font-family: inherit; font-weight: inherit; font-style: normal; letter-spacing: inherit; color: var(--gold-lt); white-space: nowrap; }
   #hero .actions .btn { text-transform: uppercase; letter-spacing: 0.08em; font-size: 14px; }
   #hero .lede { margin: 30px 0 42px; max-width: 30em; }
 
@@ -53,7 +61,7 @@
   .log b { color: var(--on-night); font-weight: 500; display: block; }
   .log span { color: var(--on-night-muted); font-size: 12.5px; }
   .log q { color: var(--on-night); quotes: '“' '”'; }
-  .log .ok b { color: var(--gold-lt); }
+  .log .ok b { color: var(--gold-lt); white-space: nowrap; }
   .log-foot {
     padding: 14px 20px; border-top: 1px solid var(--rule-night);
     color: #6E7584; font-size: 11.5px;
@@ -120,7 +128,7 @@
   .feature figure img { border-radius: 8px; border: 1px solid var(--rule-night); width: 100%; height: auto; transition: transform 0.6s cubic-bezier(.2,.7,.2,1); }
   .feature:hover figure img { transform: scale(1.015); }
   .feature-copy { padding: 48px; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; }
-  .feature .label { color: var(--gold-lt); }
+  .feature .label { color: var(--gold-lt); white-space: nowrap; }
   .feature h3 { font-size: clamp(28px, 2.8vw, 38px); line-height: 1.08; letter-spacing: -0.035em; margin: 18px 0 16px; }
   .feature p { color: var(--on-night-muted); font-size: 16.5px; }
   .feature .link { color: var(--on-night); border-color: var(--rule-night); align-self: flex-start; }
@@ -145,7 +153,7 @@
   .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--rule-night); }
   .steps li { padding: 36px 40px 8px 0; }
   .steps li + li { padding-left: 40px; border-left: 1px solid var(--rule-night); }
-  .steps .when { font-family: var(--ff-m); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold-lt); }
+  .steps .when { font-family: var(--ff-m); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold-lt); white-space: nowrap; }
   .steps h3 { font-size: 34px; letter-spacing: -0.035em; margin: 56px 0 14px; color: #F4F2EC; }
   .steps p { color: var(--on-night-muted); font-size: 16px; max-width: 30ch; }
 
@@ -169,7 +177,7 @@
   .plan.featured { background: var(--night); color: var(--on-night); border-color: var(--night); }
   .plan.featured .plan-for { color: var(--on-night-muted); }
   .plan.featured li { border-color: var(--rule-night); }
-  .plan.featured li::before { border-color: var(--gold-lt); }
+  .plan.featured li::before { border-color: var(--gold-lt); white-space: nowrap; }
   .pricing-note { margin-top: 28px; font-size: 15px; color: var(--muted); text-align: center; }
 
   @media (max-width: 1080px) {
@@ -219,7 +227,7 @@
 
 <nav>
   <div class="nav-inner">
-    <a href="#" class="wordmark" aria-label="Everrun home"><img src="assets/logo.svg" alt="" width="285" height="216"><i>Everrun</i></a>
+    <a href="#" class="wordmark" aria-label="Everrun home"><img src="assets/logo.svg" alt="" width="285" height="216"><span class="wm-text"><i>Everrun</i><small>Always-On Automation</small></span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
@@ -236,12 +244,12 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="label fi">AI automation studio &middot; Singapore</p>
-        <h1 class="fi">Systems that <span class="serif">never stop</span> working.</h1>
-        <p class="lede fi">We build the systems that answer your enquiries, follow up on time and keep your records straight, so your team can spend the day closing instead of chasing.</p>
+        <p class="hero-badge fi"><span class="ico" aria-hidden="true">⚡</span>AI Automation Agency <span class="sep">&bull;</span> Based in Singapore</p>
+        <h1 class="fi">Your business,<br>running <span class="serif">on autopilot.</span></h1>
+        <p class="lede fi">AI agents that reply to every lead in under 60 seconds, follow up until they book and keep your CRM spotless, 24/7. Your team just closes the deals.</p>
         <div class="actions fi">
-          <a href="https://wa.me/6590183930" class="btn btn-gold">Book a free 20-min call <span class="arr">&rarr;</span></a>
-          <a href="work.html" class="btn btn-ghost">See our work</a>
+          <a href="https://wa.me/6590183930" class="btn btn-gold">Automate My Business <span class="arr">&rarr;</span></a>
+          <a href="work.html" class="btn btn-ghost">See Our Case Studies</a>
         </div>
       </div>
 
@@ -279,11 +287,11 @@
 <section id="about" class="section">
   <div class="wrap about">
     <div class="fi">
-      <p class="label">About the studio</p>
+      <p class="label">About the agency</p>
       <h2>Automation that fits how your business <span class="serif">already</span> works.</h2>
     </div>
     <div class="about-copy fi">
-      <p>Everrun is a small automation studio in Singapore. We connect your leads, customers and tools so enquiries get answered, follow-ups happen and records stay accurate, without anyone having to chase them.</p>
+      <p>Everrun is a small AI automation agency in Singapore. We connect your leads, customers and tools so enquiries get answered, follow-ups happen and records stay accurate, without anyone having to chase them.</p>
       <ol class="principles">
         <li><div><h3>Start where the time goes</h3><p>We begin with the one task that costs your team the most hours, and fix that first.</p></div></li>
         <li><div><h3>Stick to the facts</h3><p>Our AI answers from your own information, checks itself before it speaks and leaves the important decisions to a person.</p></div></li>
@@ -434,7 +442,7 @@
   <div class="wrap">
     <div class="ft-grid">
       <div class="ft-brand">
-        <a href="#" class="wordmark"><img src="assets/logo.svg" alt="" width="285" height="216"><i>Everrun</i></a>
+        <a href="#" class="wordmark"><img src="assets/logo.svg" alt="" width="285" height="216"><span class="wm-text"><i>Everrun</i><small>Always-On Automation</small></span></a>
         <p>AI automation for growing businesses. Based in Singapore.</p>
       </div>
       <div class="ft-col">

@@ -53,8 +53,10 @@ nav {
 .wordmark {
   display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink);
 }
-.wordmark img { height: 32px; width: auto; }
-.wordmark i { font-family: var(--ff-d); font-weight: 600; font-style: normal; font-size: 24px; line-height: 1; letter-spacing: -0.035em; color: var(--gold); }
+.wordmark img { height: 38px; width: auto; }
+.wm-text { display: flex; flex-direction: column; gap: 4px; }
+.wordmark i { font-family: var(--ff-d); font-weight: 650; font-style: normal; font-size: 28px; line-height: 0.9; letter-spacing: -0.04em; color: #10233D; }
+.wordmark small { font-family: var(--ff-d); font-size: 7.5px; font-weight: 550; line-height: 1; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
 .nav-links a {
   text-decoration: none; font-size: 13px; font-weight: 550; color: var(--ink-2);
@@ -168,7 +170,8 @@ footer { background: var(--night); color: var(--on-night-muted); padding: 0 0 36
 }
 footer .wordmark { color: var(--on-night); gap: 14px; }
 footer .wordmark img { height: 56px; background: var(--paper); border-radius: 10px; padding: 6px 8px; box-sizing: content-box; }
-footer .wordmark i { color: var(--gold-lt); }
+footer .wordmark i { color: #F4F2EC; font-size: 30px; }
+footer .wordmark small { color: var(--gold-lt); font-size: 9.5px; }
 .ft-brand p { font-size: 15px; margin-top: 16px; max-width: 24em; }
 .ft-col h4 {
   font-family: var(--ff-m); font-size: 11.5px; font-weight: 500; letter-spacing: 0.08em;
