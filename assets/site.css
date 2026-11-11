@@ -53,7 +53,10 @@ nav {
 .wordmark {
   display: inline-flex; align-items: center; gap: 10px; text-decoration: none; color: var(--ink);
 }
-.wordmark img { height: 38px; width: auto; }
+.wordmark { font-family: 'Inter', sans-serif; font-weight: 800; font-size: 28px; line-height: 1; letter-spacing: -0.03em; color: #0f1b3d; }
+.wm-dot { color: #f2b84b; }
+footer .wordmark { color: #ffffff; }
+@media (max-width: 720px) { .wordmark { font-size: 24px; } }
 .wm-text { display: flex; flex-direction: column; gap: 4px; }
 .wordmark i { font-family: var(--ff-d); font-weight: 650; font-style: normal; font-size: 28px; line-height: 0.9; letter-spacing: -0.04em; color: #10233D; }
 .wordmark small { font-family: var(--ff-d); font-size: 7.5px; font-weight: 550; line-height: 1; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); white-space: nowrap; }
@@ -227,3 +230,6 @@ footer .wordmark small { color: var(--gold-lt); font-size: 9.5px; }
   html { scroll-behavior: auto; }
   .fi { opacity: 1; transform: none; transition: none; }
 }
+
+/* new wordmark: no gap before the dot */
+.wordmark, footer .wordmark { gap: 0; }
