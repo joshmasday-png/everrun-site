@@ -3,29 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Everrun — Your business, on autopilot</title>
-<meta property="og:title" content="Everrun | Your business, running on autopilot">
-<meta property="og:description" content="Everrun builds AI automation systems that help businesses save time and grow.">
+<title>Everrun — AI agents for Singapore property agents</title>
+<meta property="og:title" content="Everrun | An AI that works your leads like a seasoned property agent">
+<meta property="og:description" content="For Singapore property agents: answers buyers in your voice, qualifies them, works out stamp duty, holds your price and books the viewing.">
 <meta property="og:image" content="https://witheverrun.com/assets/og-image.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://witheverrun.com">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Everrun | Your business, running on autopilot">
-<meta name="twitter:description" content="Everrun builds AI automation systems that help businesses save time and grow.">
+<meta name="twitter:title" content="Everrun | An AI that works your leads like a seasoned property agent">
+<meta name="twitter:description" content="For Singapore property agents: answers buyers in your voice, qualifies them, works out stamp duty, holds your price and books the viewing.">
 <meta name="twitter:image" content="https://witheverrun.com/assets/og-image.png?v=2">
-<meta name="description" content="Everrun is a Singapore AI automation agency. We build lead follow-up, voice agents, support assistants, CRM sync and multi-agent systems for growing businesses.">
+<meta name="description" content="Everrun builds AI agents for Singapore property agents. It answers buyer enquiries in your voice, asks the qualifying questions an experienced agent would, works out stamp duty, holds your asking price and books viewings into your calendar.">
 <link rel="icon" href="assets/favicon.ico?v=6" sizes="any">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png?v=6">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Inter+Tight:wght@400;500;550;600;650&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=6">
+<link rel="stylesheet" href="assets/site.css?v=8">
 <style>
   /* ---- HERO ---- */
-  #hero { padding: 168px 0 0; position: relative; overflow: hidden; }
+  #hero { padding: 156px 0 0; position: relative; overflow: hidden; }
   #hero::before {
     content: ''; position: absolute; inset: 0; pointer-events: none;
     background-image:
@@ -35,102 +35,98 @@
     mask-image: radial-gradient(ellipse 80% 70% at 70% 40%, #000 30%, transparent 75%);
     -webkit-mask-image: radial-gradient(ellipse 80% 70% at 70% 40%, #000 30%, transparent 75%);
   }
-  .hero-grid { display: grid; grid-template-columns: 1.15fr 1fr; gap: 72px; align-items: center; position: relative; }
-  #hero .label { margin-bottom: 30px; }
+  .hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: 72px; align-items: center; position: relative; }
   .hero-badge {
     display: inline-flex; align-items: center; gap: 8px; margin-bottom: 26px;
-    padding: 6px 14px 6px 10px; border-radius: 999px;
+    padding: 6px 14px 6px 12px; border-radius: 999px;
     background: rgba(233,231,225,0.08);
     font-size: 14.5px; font-weight: 550; letter-spacing: -0.005em; color: #E9E7E1;
   }
-  .hero-badge .ico { font-size: 15px; line-height: 1; }
   .hero-badge .sep { color: var(--gold-lt); font-size: 18px; line-height: 0; }
-  #hero h1 { color: #F4F2EC; }
-  #hero h1 .serif { font-family: inherit; font-weight: inherit; font-style: normal; letter-spacing: inherit; color: var(--gold-lt); white-space: nowrap; }
+  #hero h1 { color: #F4F2EC; font-size: clamp(42px, 5.6vw, 80px); }
+  #hero h1 .serif { font-family: inherit; font-weight: inherit; font-style: normal; letter-spacing: inherit; color: var(--gold-lt); }
   #hero .actions .btn { text-transform: uppercase; letter-spacing: 0.08em; font-size: 14px; }
-  #hero .lede { margin: 30px 0 42px; max-width: 30em; }
-
-  /* the activity log */
-  .log {
-    background: var(--night-2); border: 1px solid var(--rule-night); border-radius: 14px;
-    box-shadow: 0 40px 80px -40px rgba(0,0,0,0.7);
-    font-family: var(--ff-m); font-size: 13px; overflow: hidden;
+  #hero .lede {
+    margin: 30px 0 40px; max-width: 30em;
+    font-size: clamp(17px, 1.45vw, 19px); line-height: 1.7; letter-spacing: -0.006em;
+    color: #A9AFBD; font-feature-settings: 'ss01', 'cv11';
+    padding-left: 20px; border-left: 1px solid rgba(210,176,114,0.45);
   }
-  .log-head {
-    display: flex; justify-content: space-between; align-items: center; gap: 12px;
-    padding: 14px 20px; border-bottom: 1px solid var(--rule-night);
-    color: var(--on-night-muted); font-size: 11.5px; letter-spacing: 0.04em; text-transform: uppercase;
-  }
-  .log-head .live { display: inline-flex; align-items: center; gap: 8px; color: #8FC9A3; }
-  .log-head .live::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-  .log ol { list-style: none; padding: 8px 0; }
-  .log li {
-    display: grid; grid-template-columns: 52px 1fr; gap: 14px;
-    padding: 12px 20px; line-height: 1.5;
-  }
-  .log li + li { border-top: 1px dashed rgba(233,231,225,0.07); }
-  .log time { color: #6E7584; }
-  .log b { color: var(--on-night); font-weight: 500; display: block; }
-  .log span { color: var(--on-night-muted); font-size: 12.5px; }
-  .log q { color: var(--on-night); quotes: '“' '”'; }
-  .log .ok b { color: var(--gold-lt); white-space: nowrap; }
-  .log-foot {
-    padding: 14px 20px; border-top: 1px solid var(--rule-night);
-    color: #6E7584; font-size: 11.5px;
-  }
+  #hero .lede strong { display: block; margin-bottom: 8px; color: #F4F2EC; font-weight: 550; font-size: 1.08em; letter-spacing: -0.015em; line-height: 1.45; }
 
   .hero-stats {
-    margin-top: 112px; border-top: 1px solid var(--rule-night);
+    margin-top: 104px; border-top: 1px solid var(--rule-night);
     display: grid; grid-template-columns: repeat(4, 1fr); position: relative;
   }
   .hero-stats div { padding: 28px 24px 40px 0; }
   .hero-stats div + div { padding-left: 24px; border-left: 1px solid var(--rule-night); }
   .hero-stats strong {
-    display: block; font-weight: 550; font-size: clamp(28px, 3vw, 40px);
-    letter-spacing: -0.035em; color: #F4F2EC; line-height: 1.1;
+    display: block; font-weight: 550; font-size: clamp(24px, 2.4vw, 32px);
+    letter-spacing: -0.03em; color: #F4F2EC; line-height: 1.15;
   }
   .hero-stats span { font-size: 14.5px; color: var(--on-night-muted); }
 
-  .tools {
-    background: var(--night); border-top: 1px solid var(--rule-night);
-    padding: 26px 0; overflow: hidden;
-  }
-  .tools .wrap { display: flex; align-items: center; gap: 40px; flex-wrap: wrap; }
-  .tools .label { flex-shrink: 0; }
-  .tools ul { display: flex; flex-wrap: wrap; gap: 10px 36px; list-style: none; }
-  .tools li { font-weight: 550; font-size: 16px; color: #C4C7CF; letter-spacing: -0.01em; }
+  /* ---- SECTION ACCENTS: gold, same typeface ---- */
+  h2 .serif { font-family: inherit; font-style: normal; font-weight: inherit; letter-spacing: inherit; color: var(--gold); }
 
-  /* ---- ABOUT ---- */
-  .about { display: grid; grid-template-columns: 1fr 1fr; gap: 96px; }
-  .about h2 { margin-top: 22px; }
-  .about h2 .serif { color: var(--gold); }
-  .about-copy > p { font-size: 20px; line-height: 1.55; color: var(--ink-2); margin-bottom: 48px; }
-  .principles { list-style: none; border-top: 1px solid var(--rule); counter-reset: p; }
-  .principles li {
-    counter-increment: p; padding: 26px 0; border-bottom: 1px solid var(--rule);
-    display: grid; grid-template-columns: 56px 1fr; gap: 8px;
+  /* ---- THE CONVERSATION ---- */
+  .proof { display: grid; grid-template-columns: minmax(0, 440px) 1fr; gap: 88px; align-items: start; }
+  .phone {
+    background: #0B0B0D; border-radius: 28px; padding: 14px; position: sticky; top: 96px;
+    box-shadow: 0 40px 80px -40px rgba(13,19,32,0.55);
   }
-  .principles li::before {
-    content: counter(p, decimal-leading-zero); font-family: var(--ff-m); font-size: 12.5px; color: var(--gold); padding-top: 4px;
-  }
-  .principles h3 { font-size: 19px; margin-bottom: 6px; }
-  .principles p { color: var(--muted); font-size: 16px; }
+  .phone img { width: 100%; height: auto; border-radius: 16px; }
+  .phone img + img { margin-top: 6px; }
+  .notes { list-style: none; counter-reset: n; border-top: 1px solid var(--rule); }
+  .notes li { counter-increment: n; padding: 30px 0 32px 56px; border-bottom: 1px solid var(--rule); position: relative; }
+  .notes li::before { content: counter(n, decimal-leading-zero); position: absolute; left: 0; top: 35px; font-family: var(--ff-m); font-size: 12.5px; color: var(--gold); }
+  .notes h3 { font-size: 21px; letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 8px; }
+  .notes p { color: var(--muted); font-size: 16.5px; max-width: 32em; }
+  .convo-src { margin-top: 28px; font-size: 14px; color: var(--muted); }
+  .fs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 56px; }
 
-  /* ---- SERVICES ---- */
-  .svc-list { list-style: none; border-top: 1px solid var(--rule); }
-  .svc-list li {
-    display: grid; grid-template-columns: 80px 1.1fr 1.4fr; gap: 32px; align-items: baseline;
-    padding: 34px 0; border-bottom: 1px solid var(--rule);
-    transition: background 0.25s, padding 0.25s;
+  /* ---- BUILD (case study) ---- */
+  .facts {
+    display: grid; grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid var(--rule); border-bottom: 1px solid var(--rule);
   }
-  .svc-list .n { font-family: var(--ff-m); font-size: 13px; color: var(--gold); }
-  .svc-list h3 { font-size: clamp(22px, 2.2vw, 28px); letter-spacing: -0.025em; line-height: 1.15; }
-  .svc-list p { color: var(--muted); font-size: 16.5px; }
-  @media (hover: hover) {
-    .svc-list li:hover { background: var(--white); padding-left: 20px; padding-right: 20px; }
+  .fact { padding: 24px 24px 26px 0; }
+  .fact + .fact { padding-left: 24px; border-left: 1px solid var(--rule-lt); }
+  .fact-n { font-size: clamp(24px, 2.4vw, 34px); font-weight: 550; letter-spacing: -0.035em; line-height: 1.1; }
+  .fact-l { font-size: 14px; color: var(--muted); margin-top: 6px; }
+  .shots { margin-top: 56px; display: grid; gap: 40px; }
+  .case-body { margin-top: 72px; display: grid; grid-template-columns: 1fr 280px; gap: 80px; }
+  .case-body h3 {
+    font-family: var(--ff-m); font-size: 12px; font-weight: 500; letter-spacing: 0.06em;
+    text-transform: uppercase; color: var(--muted); margin-bottom: 18px;
   }
+  .points { list-style: none; counter-reset: pt; border-bottom: 1px solid var(--rule-lt); }
+  .points li {
+    counter-increment: pt; position: relative;
+    padding: 18px 0 18px 52px; border-top: 1px solid var(--rule-lt); font-size: 16.5px; color: var(--ink-2);
+  }
+  .points li::before {
+    content: counter(pt, decimal-leading-zero); position: absolute; left: 0; top: 21px;
+    font-family: var(--ff-m); font-size: 12.5px; color: var(--gold);
+  }
+  .points b { font-weight: 600; color: var(--ink); }
+  .stack { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .stack li {
+    font-size: 13.5px; font-weight: 500; padding: 6px 12px; border-radius: 999px;
+    border: 1px solid var(--rule); background: var(--white);
+  }
+  .note { margin-top: 24px; font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .case-body h3.fs-head { margin-top: 56px; }
 
-  /* ---- WORK ---- */
+  /* ---- PROCESS ---- */
+  .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--rule-night); }
+  .steps li { padding: 36px 40px 8px 0; }
+  .steps li + li { padding-left: 40px; border-left: 1px solid var(--rule-night); }
+  .steps .when { font-family: var(--ff-m); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold-lt); white-space: nowrap; }
+  .steps h3 { font-size: 34px; letter-spacing: -0.035em; margin: 56px 0 14px; color: #F4F2EC; }
+  .steps p { color: var(--on-night-muted); font-size: 16px; max-width: 32ch; }
+
+  /* ---- OTHER PROJECTS ---- */
   .feature {
     display: grid; grid-template-columns: 1.4fr 1fr; gap: 0; text-decoration: none;
     background: var(--night); color: var(--on-night); border-radius: 16px; overflow: hidden;
@@ -161,77 +157,45 @@
     .work-rows a:hover .go { transform: translateX(4px); color: var(--gold); }
   }
 
-  /* ---- PROCESS ---- */
-  .steps { list-style: none; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; border-top: 1px solid var(--rule-night); }
-  .steps li { padding: 36px 40px 8px 0; }
-  .steps li + li { padding-left: 40px; border-left: 1px solid var(--rule-night); }
-  .steps .when { font-family: var(--ff-m); font-size: 12px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--gold-lt); white-space: nowrap; }
-  .steps h3 { font-size: 34px; letter-spacing: -0.035em; margin: 56px 0 14px; color: #F4F2EC; }
-  .steps p { color: var(--on-night-muted); font-size: 16px; max-width: 30ch; }
-
-  /* ---- PRICING ---- */
-  .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
-  .plan {
-    background: var(--white); border: 1px solid var(--rule-lt); border-radius: 16px;
-    padding: 36px 32px 32px; display: flex; flex-direction: column;
-  }
-  .plan-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
-  .plan h3 { font-size: 26px; letter-spacing: -0.03em; }
-  .plan .badge { font-family: var(--ff-m); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: var(--ink); background: var(--gold-lt); padding: 4px 9px; border-radius: 999px; }
-  .plan-for { font-size: 15.5px; color: var(--muted); margin: 8px 0 28px; }
-  .plan ul { list-style: none; margin-bottom: 32px; flex: 1; }
-  .plan li { font-size: 15px; padding: 11px 0 11px 26px; border-top: 1px solid var(--rule-lt); position: relative; }
-  .plan li::before {
-    content: ''; position: absolute; left: 3px; top: 18px; width: 9px; height: 5px;
-    border-left: 1.5px solid var(--gold); border-bottom: 1.5px solid var(--gold); transform: rotate(-45deg);
-  }
-  .plan .btn { justify-content: center; }
-  .plan.featured { background: var(--night); color: var(--on-night); border-color: var(--night); }
-  .plan.featured .plan-for { color: var(--on-night-muted); }
-  .plan.featured li { border-color: var(--rule-night); }
-  .plan.featured li::before { border-color: var(--gold-lt); white-space: nowrap; }
-  .pricing-note { margin-top: 28px; font-size: 15px; color: var(--muted); text-align: center; }
-
   @media (max-width: 1080px) {
     .hero-grid { grid-template-columns: 1fr; gap: 56px; }
-    .log { max-width: 560px; }
+    .chat { max-width: 560px; }
   }
   @media (max-width: 960px) {
     #hero { padding-top: 136px; }
     .hero-stats { margin-top: 80px; grid-template-columns: 1fr 1fr; }
     .hero-stats div:nth-child(3) { padding-left: 0; border-left: 0; }
     .hero-stats div:nth-child(n+3) { border-top: 1px solid var(--rule-night); }
-    .about { grid-template-columns: 1fr; gap: 48px; }
-    .svc-list li { grid-template-columns: 56px 1fr; gap: 8px 16px; }
-    .svc-list li p { grid-column: 2; }
-    .feature { grid-template-columns: 1fr; }
-    .feature figure { padding: 28px 28px 0; }
-    .feature-copy { padding: 32px 28px 36px; }
-    .work-rows a { grid-template-columns: 1fr 32px; gap: 8px 16px; }
-    .work-rows .tag { grid-column: 1; }
-    .work-rows h3, .work-rows p { grid-column: 1; }
-    .work-rows .go { grid-row: 1 / span 3; grid-column: 2; align-self: center; }
+    .proof { grid-template-columns: 1fr; gap: 48px; }
+    .phone { position: static; max-width: 420px; margin: 0 auto; }
+    .fs-grid { grid-template-columns: 1fr; }
+    .fs-grid .points + .points li:first-child { border-top: 0; }
+    .facts { grid-template-columns: 1fr 1fr; }
+    .fact:nth-child(3) { padding-left: 0; border-left: 0; }
+    .fact:nth-child(n+3) { border-top: 1px solid var(--rule-lt); }
+    .case-body { grid-template-columns: 1fr; gap: 40px; }
     .steps { grid-template-columns: 1fr; }
     .steps li, .steps li + li { padding: 28px 0 32px; border-left: 0; }
     .steps li + li { border-top: 1px solid var(--rule-night); }
     .steps h3 { margin-top: 16px; }
-    .plans { grid-template-columns: 1fr; max-width: 520px; margin: 0 auto; }
+    .feature { grid-template-columns: 1fr; }
+    .feature figure { padding: 28px 28px 0; }
+    .feature-copy { padding: 32px 28px 36px; }
+    .work-rows a { grid-template-columns: 1fr 32px; gap: 8px 16px; }
+    .work-rows .tag, .work-rows h3, .work-rows p { grid-column: 1; }
+    .work-rows .go { grid-row: 1 / span 3; grid-column: 2; align-self: center; }
   }
   @media (max-width: 600px) {
-    #hero { padding-top: 120px; }
-    .log li { grid-template-columns: 44px 1fr; gap: 10px; padding: 11px 16px; }
-    .log-head, .log-foot { padding-left: 16px; padding-right: 16px; }
+    #hero { padding-top: 116px; }
     .hero-stats div { padding: 22px 12px 26px 0; }
     .hero-stats div + div { padding-left: 16px; }
     .hero-stats div:nth-child(3) { padding-left: 0; }
-    .tools .wrap { gap: 16px; }
-    .tools ul { gap: 8px 22px; }
-    .tools li { font-size: 14.5px; }
-    .about-copy > p { font-size: 18px; }
-    .principles li { grid-template-columns: 40px 1fr; }
-    .svc-list li { grid-template-columns: 1fr; padding: 28px 0; }
-    .svc-list li p { grid-column: 1; }
-    .plan { padding: 30px 24px 26px; }
+    .notes li { padding-left: 42px; }
+    .phone { border-radius: 22px; padding: 10px; }
+    .fact { padding: 18px 12px 20px 0; }
+    .fact + .fact { padding-left: 14px; }
+    .fact:nth-child(3) { padding-left: 0; }
+    .points li { padding-left: 40px; font-size: 16px; }
   }
 </style>
 </head>
@@ -242,12 +206,11 @@
     <a href="#" class="wordmark" aria-label="Everrun home">everrun<span class="wm-dot">.</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#work">Work</a></li>
+      <li><a href="#conversation">See it work</a></li>
+      <li><a href="#failsafes">Failsafes</a></li>
       <li><a href="#process">Process</a></li>
-      <li><a href="#pricing">Pricing</a></li>
-      <li><a href="#contact" class="nav-cta">Book a call</a></li>
+      <li><a href="#projects">Other projects</a></li>
+      <li><a href="#contact" class="nav-cta">Book a demo</a></li>
     </ul>
   </div>
 </nav>
@@ -256,113 +219,93 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="hero-badge fi"><span class="ico" aria-hidden="true">⚡</span>AI Automation Agency <span class="sep">&bull;</span> Based in Singapore</p>
-        <h1 class="fi">Your business,<br>running <span class="serif">on autopilot.</span></h1>
-        <p class="lede fi">AI agents that reply to every lead in under 60 seconds, follow up until they book and keep your CRM spotless, 24/7. Your team just closes the deals.</p>
+        <p class="hero-badge fi">AI for property agents <span class="sep">&bull;</span> Singapore</p>
+        <h1 class="fi">Works your leads like a <span class="serif">seasoned agent.</span></h1>
+        <p class="lede fi"><strong>An AI agent that answers your buyers the way you would.</strong>Straight to the point. It checks MOP and whether they're selling first, works out stamp duty, holds your asking price and books the viewing. The offer comes to you.</p>
         <div class="actions fi">
-          <a href="https://wa.me/6590183930" class="btn btn-gold">Automate My Business <span class="arr">&rarr;</span></a>
-          <a href="work.html" class="btn btn-ghost">See Our Case Studies</a>
+          <a href="https://wa.me/6590183930?text=Hi%20Everrun%2C%20I%27m%20a%20property%20agent%20and%20I%27d%20like%20a%20demo%20of%20the%20AI%20agent." class="btn btn-gold">Book a demo <span class="arr">&rarr;</span></a>
+          <a href="#conversation" class="btn btn-ghost">Read a real chat</a>
         </div>
       </div>
 
-      <div class="log fi" aria-label="Example of an enquiry being handled automatically">
-        <div class="log-head"><span>Property enquiry &middot; 10:04 pm</span><span class="live">Running</span></div>
-        <ol>
-          <li><time>22:04</time><div><b>New enquiry from website form</b><span>Buying &middot; 3-room HDB &middot; Tampines &middot; Budget S$600k</span></div></li>
-          <li class="ok"><time>22:04</time><div><b>WhatsApp reply sent in 41 seconds</b><span><q>Hi Rachel, thanks for reaching out about a 3-room in Tampines. Pick a time that suits you here.</q></span></div></li>
-          <li><time>22:04</time><div><b>Lead saved to CRM</b><span>Status: New &middot; Owner: Agent Tan</span></div></li>
-          <li><time>22:05</time><div><b>Agent alerted on Telegram</b><span>Full summary, ready for the morning</span></div></li>
-          <li><time>09:00</time><div><b>Follow-up scheduled</b><span>Sent tomorrow if no viewing is booked</span></div></li>
-        </ol>
-        <div class="log-foot">Illustrative example based on our real estate lead pipeline</div>
+      <div class="chat fi" aria-label="Test conversation between a buyer and the AI agent">
+        <div class="chat-head">
+          <span class="chat-av" aria-hidden="true">A</span>
+          <div><b>Alex Tan &middot; Property Agent</b><small>Replies by Everrun</small></div>
+          <span class="live">Online</span>
+        </div>
+        <div class="chat-body">
+          <div class="bub out">Hi, is the 2-bed near Dakota still available?<time>6:47 pm</time></div>
+          <div class="bub in">Hi, yes, it's still available. Brand-new 99-year leasehold 2-bed, 2-bath plus study, 775 sqft, asking $2.3m. Dakota MRT is about a 5-minute walk, with two primary schools within 1km. I can show you around Tue at 6:30pm or Wed at 12:30pm. Would either suit you?<time>6:48 pm</time></div>
+          <div class="bub out">Maybe, but first, we're a family of 4 upgrading from an HDB in Tampines. Is it suitable for us?<time>6:48 pm</time></div>
+          <div class="bub in">It could work for four if the kids are happy sharing a bedroom, though it may feel tight as they get older. Have you completed your HDB's MOP? And are you planning to sell your Tampines flat before buying, or buy first?<time>6:49 pm</time></div>
+        </div>
+        <div class="chat-foot">From a test chat with our prototype. Names removed.</div>
       </div>
     </div>
 
     <div class="hero-stats fi">
-      <div><strong>&lt; 60 sec</strong><span>to answer a new enquiry</span></div>
-      <div><strong>~2 weeks</strong><span>from first call to live</span></div>
-      <div><strong>24 / 7</strong><span>replies, nights and weekends</span></div>
-      <div><strong>100%</strong><span>yours: your accounts, your data</span></div>
+      <div><strong>24 / 7</strong><span>replies, including the 11 pm enquiries</span></div>
+      <div><strong>Checked twice</strong><span>a second AI verifies every reply</span></div>
+      <div><strong>Your calendar</strong><span>viewings booked into your free slots</span></div>
+      <div><strong>Your call</strong><span>offers and negotiation come to you</span></div>
     </div>
   </div>
 </header>
 
-<div class="tools">
+<section id="conversation" class="section">
   <div class="wrap">
-    <span class="label">Built on</span>
-    <ul>
-      <li>n8n</li><li>OpenAI</li><li>Make.com</li><li>WhatsApp</li><li>Vapi</li><li>Twilio</li><li>Airtable</li><li>Shopify</li>
-    </ul>
-  </div>
-</div>
-
-<section id="about" class="section">
-  <div class="wrap about">
-    <div class="fi">
-      <p class="label">About the agency</p>
-      <h2>Automation that fits how your business <span class="serif">already</span> works.</h2>
+    <div class="sec-head">
+      <div class="fi">
+        <p class="label">See it work</p>
+        <h2>One buyer, <span class="serif">seven minutes</span></h2>
+      </div>
+      <p class="fi">Screenshots from a test chat with our prototype, from the first message to a booked viewing and an offer on the table. Alongside it: what an experienced agent would notice.</p>
     </div>
-    <div class="about-copy fi">
-      <p>Everrun is a small AI automation agency in Singapore. We connect your leads, customers and tools so enquiries get answered, follow-ups happen and records stay accurate, without anyone having to chase them.</p>
-      <ol class="principles">
-        <li><div><h3>Start where the time goes</h3><p>We begin with the one task that costs your team the most hours, and fix that first.</p></div></li>
-        <li><div><h3>Stick to the facts</h3><p>Our AI answers from your own information, checks itself before it speaks and leaves the important decisions to a person.</p></div></li>
-        <li><div><h3>You own everything</h3><p>Every system runs on your own accounts, with clear documentation. If something shouldn't be automated, we'll tell you.</p></div></li>
+
+    <div class="proof">
+      <div class="phone fi">
+        <img src="assets/work/agent-chat-1.jpg" alt="Chat screenshot: the buyer asks if the unit is available, the agent replies with tenure, size, price, MRT, schools and two viewing times, then qualifies a family of four upgrading from an HDB and works out PR stamp duty in two scenarios" width="736" height="1178" loading="lazy">
+        <img src="assets/work/agent-chat-2.jpg" alt="Chat screenshot continued: the agent holds the asking price, takes a $2.1m offer to pass to the owner, and confirms a viewing booking" width="736" height="630" loading="lazy">
+      </div>
+
+      <ol class="notes">
+        <li class="fi"><h3>Answers, then asks for the viewing.</h3><p>Everything a buyer wants in the first reply: tenure, layout, price, MRT, schools and why this unit is good. Then two real times, taken from the agent's free calendar slots.</p></li>
+        <li class="fi"><h3>Honest, then qualifies.</h3><p>It doesn't oversell a 2-bed to a family of four. Then it asks the two questions that decide an upgrader's timeline: is the MOP done, and are they selling first?</p></li>
+        <li class="fi"><h3>Does the maths both ways.</h3><p>A PR upgrader pays very different ABSD depending on whether the HDB is sold first: 5% or 30%. It gives both figures, marks them as estimates and keeps qualifying.</p></li>
+        <li class="fi"><h3>Holds the price.</h3><p>It never guesses or reveals the owner's bottom line. It asks for the buyer's number instead.</p></li>
+        <li class="fi"><h3>Takes the offer, passes it on.</h3><p>The offer is logged and flagged to the agent straight away. Negotiation stays with a person.</p></li>
+        <li class="fi"><h3>Books it.</h3><p>The viewing goes into the agent's calendar and the buyer gets a one-line confirmation, with the offer in it.</p></li>
       </ol>
     </div>
+    <p class="convo-src fi">Test conversation with our prototype. Stamp duty figures are estimates.</p>
   </div>
 </section>
 
-<section id="services" class="section tint">
+<section id="failsafes" class="section tint">
   <div class="wrap">
     <div class="sec-head">
       <div class="fi">
-        <p class="label">Services</p>
-        <h2>What we build</h2>
+        <p class="label">Failsafes</p>
+        <h2>What if something <span class="serif">goes wrong?</span></h2>
       </div>
-      <p class="fi">Every project starts with one job your team does by hand, and ends with a system that does it for them.</p>
+      <p class="fi">It's the first thing agents ask us. Your name is on every message, so these safety nets are built in from day one.</p>
     </div>
-    <ol class="svc-list">
-      <li class="fi"><span class="n">01</span><h3>WhatsApp replies and follow-up</h3><p>Every new enquiry gets an answer straight away, a reminder the next day if they haven't booked, and a booking link when they're ready.</p></li>
-      <li class="fi"><span class="n">02</span><h3>AI phone assistants</h3><p>An assistant that calls new leads, asks your questions, tries again when nobody picks up and records how each call went.</p></li>
-      <li class="fi"><span class="n">03</span><h3>Lead tracking</h3><p>Website forms, ads and WhatsApp all feed into one list, with a status, an owner and a next step for every lead.</p></li>
-      <li class="fi"><span class="n">04</span><h3>Online store messages</h3><p>Abandoned cart reminders, thank-you messages, review requests and back-in-stock alerts, sent automatically.</p></li>
-      <li class="fi"><span class="n">05</span><h3>Records that update themselves</h3><p>Your customer records and reports stay up to date as leads move along, so the numbers are right without manual checking.</p></li>
-      <li class="fi"><span class="n">06</span><h3>Teams of AI assistants</h3><p>Several AI assistants sharing one larger task, each limited to its own information, with checks on what they say and a person signing off at the end.</p></li>
-    </ol>
-  </div>
-</section>
-
-<section id="work" class="section">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="fi">
-        <p class="label">Selected work</p>
-        <h2>Systems we've <span class="serif">shipped</span></h2>
-      </div>
-      <p class="fi">Real builds, with screenshots and the details of how each one works.</p>
+    <div class="fs-grid">
+      <ol class="points fi">
+        <li><b>It tries again first.</b> If the AI service has a hiccup, the reply is retried automatically before anything else happens.</li>
+        <li><b>A safe reply, never silence.</b> If a reply still can't be used, the buyer gets a short "let me check and get back to you shortly", and you get an alert to step in.</li>
+        <li><b>Every reply is checked twice.</b> A second AI reviews each reply against your listings before it's sent. Anything wrong is corrected, never sent as it was.</li>
+        <li><b>No double bookings.</b> If a buyer asks for a time you're not free, it doesn't book it. The viewing is passed to you to arrange.</li>
+      </ol>
+      <ol class="points fi" start="5" style="counter-reset: pt 4">
+        <li><b>You can take over at any time.</b> Step into any chat whenever you want, and the AI stops replying to that buyer until you hand it back.</li>
+        <li><b>Sensitive topics come to you.</b> Offers, co-broke terms, complaints and anything legal are passed straight to you.</li>
+        <li><b>Everything is on record.</b> Every message in and out is saved to your own sheet, so you can see exactly what was said and when.</li>
+        <li><b>Your setup is separate.</b> Every agent runs on their own copy, with their own listings and calendar. A problem elsewhere never touches yours.</li>
+      </ol>
     </div>
-
-    <a href="work.html#negotiation" class="feature fi">
-      <figure>
-        <img src="assets/work/nego-live-board.jpg" alt="Live board of the multi-agent negotiation: price range, each agent's private reasoning and the messages between them" width="1800" height="1017" loading="lazy">
-      </figure>
-      <div class="feature-copy">
-        <div>
-          <p class="label plain">Featured &middot; Procurement</p>
-          <h3>Two AI agents negotiate a supply deal</h3>
-          <p>Each agent can only see its own company's data. Every message is fact-checked before it's sent, and no deal goes through without the owner's approval.</p>
-        </div>
-        <span class="link">Read the case study &rarr;</span>
-      </div>
-    </a>
-
-    <ul class="work-rows">
-      <li class="fi"><a href="work.html#lifecycle"><span class="tag">Enterprise</span><h3>Lead-to-support automation</h3><p>One system takes every enquiry from first contact through sales, support and billing.</p><span class="go">&rarr;</span></a></li>
-      <li class="fi"><a href="work.html#voice"><span class="tag">Healthcare</span><h3>AI phone follow-up for a clinic</h3><p>New enquiries get a personal message and a call within minutes.</p><span class="go">&rarr;</span></a></li>
-      <li class="fi"><a href="work.html#property"><span class="tag">Real estate</span><h3>Lead pipeline for property agents</h3><p>WhatsApp replies within a minute, instant agent alerts and automatic follow-up.</p><span class="go">&rarr;</span></a></li>
-      <li class="fi"><a href="work.html#support"><span class="tag">Shopify app</span><h3>Zypher, AI support for online stores</h3><p>Answers customer questions from each store's own policies and pages.</p><span class="go">&rarr;</span></a></li>
-    </ul>
+    <p class="convo-src fi"><a class="link" href="work.html#agent">Technical write-up, with the workflow &rarr;</a></p>
   </div>
 </section>
 
@@ -373,78 +316,57 @@
         <p class="label">Process</p>
         <h2>From first call to live in about <span class="serif" style="color:var(--gold-lt)">two weeks</span></h2>
       </div>
-      <p class="fi" style="color:var(--on-night-muted)">No long discovery phase and no endless back-and-forth. One clear goal, built and tested on your own accounts.</p>
+      <p class="fi" style="color:var(--on-night-muted)">We do the setup. You give us what's already on your phone, and we'll quote at the end of the first call.</p>
     </div>
     <ol class="steps">
-      <li class="fi"><span class="when">Day 1</span><h3>Review</h3><p>A 20-minute call to understand how enquiries move through your business and find the step that costs the most time.</p></li>
-      <li class="fi"><span class="when">Week 1</span><h3>Build</h3><p>We connect your tools, set up the AI and test it on real examples until it handles the awkward cases.</p></li>
-      <li class="fi"><span class="when">Week 2</span><h3>Handover</h3><p>It goes live on your accounts with simple instructions for your team, and we stay on hand for support.</p></li>
+      <li class="fi"><span class="when">Day 1</span><h3>Demo</h3><p>A 20-minute call. Send us one of your listings and we'll show you the agent handling buyer questions about it.</p></li>
+      <li class="fi"><span class="when">Week 1</span><h3>Build</h3><p>You send your listings (PropertyGuru links are fine), 10 to 20 of your real WhatsApp messages and your rules. We set it up to sound like you.</p></li>
+      <li class="fi"><span class="when">Week 2</span><h3>Go live</h3><p>You test it with your hardest buyer questions until you're happy. Then it goes live, and we keep tuning it from real chats.</p></li>
     </ol>
   </div>
 </section>
 
-<section id="pricing" class="section tint">
+<section id="projects" class="section">
   <div class="wrap">
     <div class="sec-head">
       <div class="fi">
-        <p class="label">Pricing</p>
-        <h2>Simple monthly plans</h2>
+        <p class="label">Other projects</p>
+        <h2>Other systems we've <span class="serif">shipped</span></h2>
       </div>
-      <p class="fi">Building, support and upkeep are billed monthly. We'll give you a quote once we understand what you need, usually at the end of the first call.</p>
+      <p class="fi">Before we focused on property, we built automation for procurement, healthcare, e-commerce and enterprise teams. Real builds, with screenshots and the details of how each one works.</p>
     </div>
-    <div class="plans">
-      <div class="plan fi">
-        <div class="plan-top"><h3>Starter</h3></div>
-        <p class="plan-for">One task, done properly.</p>
-        <ul>
-          <li>1 automated workflow</li>
-          <li>Connects up to 2 of your tools</li>
-          <li>WhatsApp or email</li>
-          <li>Simple lead list in Airtable</li>
-          <li>7 days of support after launch</li>
-        </ul>
-        <a href="https://wa.me/6590183930" class="btn btn-ghost">Ask about Starter</a>
+
+    <a href="work.html#negotiation" class="feature fi">
+      <figure>
+        <img src="assets/work/nego-live-board.jpg" alt="Live board of the multi-agent negotiation: price range, each agent's private reasoning and the messages between them" width="1800" height="1017" loading="lazy">
+      </figure>
+      <div class="feature-copy">
+        <div>
+          <p class="label plain">Procurement &middot; Multi-agent</p>
+          <h3>Two AI agents negotiate a supply deal</h3>
+          <p>Each agent can only see its own company's data. Every message is fact-checked before it's sent, and no deal goes through without the owner's approval.</p>
+        </div>
+        <span class="link">Read the case study &rarr;</span>
       </div>
-      <div class="plan featured fi">
-        <div class="plan-top"><h3>Pro Suite</h3><span class="badge">Most chosen</span></div>
-        <p class="plan-for">Your whole lead flow, start to finish.</p>
-        <ul>
-          <li>Up to 3 automated workflows</li>
-          <li>Connects up to 5 of your tools</li>
-          <li>WhatsApp, email and customer records</li>
-          <li>AI-written replies</li>
-          <li>Full lead tracking in Airtable</li>
-          <li>Calendly booking</li>
-          <li>14 days of support after launch</li>
-        </ul>
-        <a href="https://wa.me/6590183930" class="btn btn-gold">Ask about Pro Suite</a>
-      </div>
-      <div class="plan fi">
-        <div class="plan-top"><h3>Agency</h3></div>
-        <p class="plan-for">Everything, including phone calls.</p>
-        <ul>
-          <li>Review of all your tools and processes</li>
-          <li>No fixed limit on workflows</li>
-          <li>AI phone assistant</li>
-          <li>WhatsApp, email, records and phone</li>
-          <li>Custom AI instructions</li>
-          <li>Team training and documentation</li>
-          <li>30 days of priority support</li>
-        </ul>
-        <a href="https://wa.me/6590183930" class="btn btn-ghost">Ask about Agency</a>
-      </div>
-    </div>
+    </a>
+
+    <ul class="work-rows">
+      <li class="fi"><a href="work.html#lifecycle"><span class="tag">Enterprise</span><h3>Lead-to-support automation</h3><p>One system takes every enquiry from first contact through sales, support and billing.</p><span class="go">&rarr;</span></a></li>
+      <li class="fi"><a href="work.html#voice"><span class="tag">Healthcare</span><h3>AI phone follow-up for a clinic</h3><p>New enquiries get a personal message and a call within minutes.</p><span class="go">&rarr;</span></a></li>
+      <li class="fi"><a href="work.html#property"><span class="tag">Real estate</span><h3>Lead pipeline for property agents</h3><p>Our first property build: WhatsApp replies within a minute, agent alerts and automatic follow-up.</p><span class="go">&rarr;</span></a></li>
+      <li class="fi"><a href="work.html#support"><span class="tag">Shopify app</span><h3>Zypher, AI support for online stores</h3><p>Answers customer questions from each store's own policies and pages.</p><span class="go">&rarr;</span></a></li>
+    </ul>
   </div>
 </section>
 
 <section id="contact" class="cta on-night">
   <div class="wrap cta-inner">
-    <h2 class="fi">Let's look at <span class="serif">your</span> workflow.</h2>
+    <h2 class="fi">See it answer <span class="serif">your</span> listing.</h2>
     <div class="fi">
-      <p>Book a free 20-minute call. We'll look at one process and tell you honestly what we'd automate, and what we'd leave alone.</p>
+      <p>Send us one of your listings. On a free 20-minute demo, we'll show you the agent handling buyer questions about it, from the first message to a booked viewing.</p>
       <div class="actions">
-        <a href="https://wa.me/6590183930" class="btn btn-gold">WhatsApp us <span class="arr">&rarr;</span></a>
-        <a href="mailto:inquiry@coldtogoldsg.com" class="btn btn-ghost">Email us</a>
+        <a href="https://wa.me/6590183930?text=Hi%20Everrun%2C%20I%27m%20a%20property%20agent%20and%20I%27d%20like%20a%20demo%20of%20the%20AI%20agent." class="btn btn-gold">WhatsApp us <span class="arr">&rarr;</span></a>
+        <a href="mailto:inquiry@coldtogoldsg.com?subject=Demo%20of%20the%20Everrun%20property%20agent" class="btn btn-ghost">Email us</a>
       </div>
     </div>
   </div>
@@ -455,15 +377,15 @@
     <div class="ft-grid">
       <div class="ft-brand">
         <a href="#" class="wordmark">everrun<span class="wm-dot">.</span></a>
-        <p>AI automation for growing businesses. Based in Singapore.</p>
+        <p>AI agents for Singapore property agents.</p>
       </div>
       <div class="ft-col">
         <h4>Explore</h4>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="work.html">Our work</a></li>
+          <li><a href="#conversation">See it work</a></li>
+          <li><a href="#failsafes">Failsafes</a></li>
+          <li><a href="#projects">Other projects</a></li>
+          <li><a href="work.html">All case studies</a></li>
         </ul>
       </div>
       <div class="ft-col">

@@ -4,25 +4,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Our Work — Everrun</title>
-<meta property="og:title" content="Everrun | Your business, running on autopilot">
-<meta property="og:description" content="Everrun builds AI automation systems that help businesses save time and grow.">
+<meta property="og:title" content="Our work | Everrun, AI agents for Singapore property agents">
+<meta property="og:description" content="How the Everrun property agent works, plus the other AI systems we have built.">
 <meta property="og:image" content="https://witheverrun.com/assets/og-image.png?v=2">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:url" content="https://witheverrun.com/work.html">
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Everrun | Your business, running on autopilot">
-<meta name="twitter:description" content="Everrun builds AI automation systems that help businesses save time and grow.">
+<meta name="twitter:title" content="Our work | Everrun, AI agents for Singapore property agents">
+<meta name="twitter:description" content="How the Everrun property agent works, plus the other AI systems we have built.">
 <meta name="twitter:image" content="https://witheverrun.com/assets/og-image.png?v=2">
-<meta name="description" content="Case studies from Everrun: a multi-agent negotiation system, lifecycle automation, voice AI follow-up, lead pipelines and an AI support product.">
+<meta name="description" content="Case studies from Everrun: the agentic AI agent for Singapore property agents, a property lead pipeline, multi-agent negotiation, lifecycle automation, voice AI follow-up and an AI support product.">
 <link rel="icon" href="assets/favicon.ico?v=6" sizes="any">
 <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png?v=6">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=6">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@800&family=Inter+Tight:wght@400;500;550;600;650&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/site.css?v=6">
+<link rel="stylesheet" href="assets/site.css?v=8">
 <style>
   /* ---- PAGE HEAD ---- */
   .page-head { padding: 176px 0 0; }
@@ -32,7 +32,7 @@
   .page-head .lede { margin-top: 28px; }
   .toc {
     list-style: none; margin-top: 88px; border-top: 1px solid var(--rule-night);
-    display: grid; grid-template-columns: repeat(5, 1fr);
+    display: grid; grid-template-columns: repeat(6, 1fr);
   }
   .toc li + li { border-left: 1px solid var(--rule-night); }
   .toc a {
@@ -92,6 +92,10 @@
   }
   .note { margin-top: 24px; font-size: 14px; color: var(--muted); line-height: 1.5; }
 
+  .case-feature { border-top: 3px solid var(--gold-lt); }
+  .chat-pair { display: grid; grid-template-columns: 1.1fr 1fr; gap: 28px; align-items: start; }
+  @media (max-width: 960px) { .chat-pair { grid-template-columns: 1fr; } .chat { max-width: 560px; } }
+
   @media (max-width: 960px) {
     .page-head { padding-top: 140px; }
     .toc { grid-template-columns: 1fr; margin-top: 64px; }
@@ -123,12 +127,11 @@
     <a href="index.html" class="wordmark" aria-label="Everrun home">everrun<span class="wm-dot">.</span></a>
     <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
     <ul class="nav-links">
-      <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#services">Services</a></li>
-      <li><a href="work.html" class="active">Work</a></li>
+      <li><a href="index.html#conversation">See it work</a></li>
+      <li><a href="index.html#failsafes">Failsafes</a></li>
       <li><a href="index.html#process">Process</a></li>
-      <li><a href="index.html#pricing">Pricing</a></li>
-      <li><a href="#contact" class="nav-cta">Book a call</a></li>
+      <li><a href="index.html#projects" class="active">Other projects</a></li>
+      <li><a href="index.html#contact" class="nav-cta">Book a demo</a></li>
     </ul>
   </div>
 </nav>
@@ -136,24 +139,152 @@
 <header class="page-head on-night">
   <div class="wrap">
     <p class="label fi">Our work</p>
-    <h1 class="fi">Five systems, <span class="serif">in detail.</span></h1>
-    <p class="lede fi">From a WhatsApp follow-up for property agents to two AI agents negotiating a supply deal. For each one: what it does, what it's built on, and how it holds up.</p>
+    <h1 class="fi">Six systems, <span class="serif">in detail.</span></h1>
+    <p class="lede fi">Our focus is AI agents for Singapore property agents, so that's first. After it come the other systems we've built, from procurement to healthcare to e-commerce. For each one: what it does, what it's built on, and how it holds up.</p>
     <ol class="toc fi">
-      <li><a href="#negotiation"><span>01</span>Multi-agent negotiation</a></li>
-      <li><a href="#lifecycle"><span>02</span>Lead-to-support lifecycle</a></li>
-      <li><a href="#voice"><span>03</span>AI voice follow-up</a></li>
-      <li><a href="#property"><span>04</span>Real estate lead pipeline</a></li>
-      <li><a href="#support"><span>05</span>Zypher, Shopify support agent</a></li>
+      <li><a href="#agent"><span>01 &middot; Focus</span>Agentic property agent</a></li>
+      <li><a href="#property"><span>02</span>Real estate lead pipeline</a></li>
+      <li><a href="#negotiation"><span>03</span>Multi-agent negotiation</a></li>
+      <li><a href="#lifecycle"><span>04</span>Lead-to-support lifecycle</a></li>
+      <li><a href="#voice"><span>05</span>AI voice follow-up</a></li>
+      <li><a href="#support"><span>06</span>Zypher, Shopify support agent</a></li>
     </ol>
   </div>
 </header>
 
 <main>
 
-  <!-- 01 NEGOTIATION -->
+  <!-- 01 AGENTIC PROPERTY AGENT -->
+  <article class="case case-feature" id="agent">
+    <div class="wrap">
+      <p class="case-meta fi"><b>01</b> &nbsp;Real estate &middot; Singapore &middot; 2026 &middot; our focus</p>
+      <h2 class="fi">An agentic AI agent for property agents</h2>
+      <p class="lede fi">
+        A Singapore property agent's AI assistant that texts buyers in the agent's own voice. It answers from the agent's listings,
+        qualifies the buyer, books viewings into the agent's Google Calendar and hands offers, co-broke terms and anything sensitive
+        back to the agent. A second AI checks every message before it's sent, and the agent can take over any chat at any time.
+      </p>
+
+      <div class="facts fi">
+        <div class="fact"><div class="fact-n">Any time</div><div class="fact-l">the agent can take over a chat</div></div>
+        <div class="fact"><div class="fact-n">2</div><div class="fact-l">AI models per reply: agent, then verifier</div></div>
+        <div class="fact"><div class="fact-n">20h &middot; 3d &middot; 14d</div><div class="fact-l">follow-ups to quiet buyers, then it stops</div></div>
+        <div class="fact"><div class="fact-n">9pm&ndash;9am</div><div class="fact-l">quiet hours for anything unsolicited</div></div>
+      </div>
+
+      <div class="shots">
+        <figure class="shot fi">
+          <img src="assets/work/agent-n8n-full.jpg" alt="The full n8n workflow: message intake, context building, the Real Estate Agent and Verifier, sending, booking, lead updates and the follow-up branch" width="2200" height="767" loading="lazy">
+          <figcaption>The whole workflow. Left: incoming messages and agent commands. Middle: build the context, then the Real Estate Agent and the Verifier. Right: send the reply, update the lead, book or cancel viewings and alert the agent. Bottom: the follow-up run.</figcaption>
+        </figure>
+        <figure class="shot fi">
+          <img src="assets/work/agent-n8n-brain.jpg" alt="Close-up: the Real Estate Agent node with listings, leads and knowledge sheet tools, then the Verifier node with its own listings sheet and a verdict format" width="1800" height="782" loading="lazy">
+          <figcaption>The core. The Real Estate Agent can look up the listings, leads and knowledge sheets before answering. Its draft goes to a separate Verifier, which returns a verdict before anything is sent.</figcaption>
+        </figure>
+        <p class="note fi"><a class="link" href="index.html#conversation">Read a full test conversation, annotated &rarr;</a></p>
+      </div>
+
+      <div class="case-body">
+        <div class="fi">
+          <h3>How it works</h3>
+          <ol class="points">
+            <li><b>Waits for the whole message.</b> Buyers often send three short messages in a row. The agent waits a few seconds until they've finished typing, then reads the full conversation so far.</li>
+            <li><b>Fresh context every time.</b> It reads the agent's listings, a knowledge sheet with Singapore rules and the agent's own playbook, the buyer's lead record and the agent's free slots in Google Calendar.</li>
+            <li><b>Thinks like an agent.</b> The main model notes who the buyer is, how serious they are and what's still unknown, decides the next move, then writes the reply and any actions: book a slot, update the lead, hand over.</li>
+            <li><b>A second AI checks it.</b> A separate verifier reviews the draft against the listings and the rules: no invented facts, no promised yields, no revealing the owner's bottom line. Only then is it sent.</li>
+            <li><b>Sounds like a person.</b> Replies are split into natural message bubbles, sent with a typing indicator and short pauses, and match the buyer's language and tone.</li>
+            <li><b>Books real viewings.</b> It offers only free slots, with travel buffer and minimum notice built in, creates the calendar event, and cancels the old one when a buyer reschedules.</li>
+            <li><b>Keeps the agent in charge.</b> Every reply sends the agent a short lead card. Offers, co-broke terms, complaints and legal questions pause the AI and hand over. The agent can take over, reply or hand back from the alerts chat.</li>
+            <li><b>Follows up within the rules.</b> A scheduled run checks every 30 minutes for quiet buyers and sends up to three follow-ups, written fresh from the conversation, never during quiet hours and never to anyone who opted out.</li>
+          </ol>
+          <h3 style="margin-top:56px">If something goes wrong</h3>
+          <ol class="points">
+            <li><b>It retries first.</b> If the AI service has a hiccup, both the agent and the verifier automatically try again.</li>
+            <li><b>A safe reply, never silence.</b> If a draft still can't be used, the buyer gets a short holding message and the agent gets an alert to step in.</li>
+            <li><b>Nothing goes out unchecked.</b> Every reply passes the verifier first. A draft that fails the check is corrected, never sent as it was.</li>
+            <li><b>No double bookings.</b> If the AI picks a time that isn't free, the booking is refused and passed to the agent to arrange.</li>
+            <li><b>One failed lookup doesn't stop the reply.</b> If a sheet can't be read or an alert doesn't go through, the buyer still gets an answer. The Singapore rules also have a built-in backup copy.</li>
+            <li><b>Everything is on record, and each agent runs separately.</b> Every message is saved to the agent's own sheet, and each agent has their own copy, so a problem in one never affects another.</li>
+          </ol>
+        </div>
+        <aside class="fi">
+          <h3>Built with</h3>
+          <ul class="stack">
+            <li>n8n</li><li>OpenAI</li><li>WhatsApp Cloud API</li><li>Google Calendar</li><li>Google Sheets</li>
+          </ul>
+          <p class="note">Each agent gets their own copy: their own voice, listings, calendar and alerts.</p>
+          <p class="note"><a class="link" href="index.html#conversation">See it in action &rarr;</a></p>
+        </aside>
+      </div>
+    </div>
+  </article>
+
+  <!-- 02 PROPERTY -->
+  <article class="case" id="property">
+    <div class="wrap">
+      <p class="case-meta fi"><b>02</b> &nbsp;Real estate &middot; 2025 &middot; first version</p>
+      <h2 class="fi">Multi-stage lead pipeline for property agents</h2>
+      <p class="lede fi">
+        A buyer fills in an enquiry form at 10 pm. The agent is at a viewing and replies the next morning, by which time the buyer
+        has called three other agents. This system replies on WhatsApp within a minute, any time of day, tells the agent on Telegram,
+        logs the lead and follows up with anyone who goes quiet.
+      </p>
+
+      <div class="facts fi">
+        <div class="fact"><div class="fact-n">&lt;60s</div><div class="fact-l">to the first WhatsApp reply</div></div>
+        <div class="fact"><div class="fact-n">3</div><div class="fact-l">Make.com scenarios</div></div>
+        <div class="fact"><div class="fact-n">24h</div><div class="fact-l">until an automatic follow-up</div></div>
+        <div class="fact"><div class="fact-n">2h</div><div class="fact-l">reminder before each viewing</div></div>
+      </div>
+
+      <div class="shots">
+        <figure class="shot light fi">
+          <img src="assets/work/re-make.jpg" alt="Make.com scenario: Tally form, set variables, OpenAI, Twilio WhatsApp request, Airtable record and Telegram message" width="1600" height="441" loading="lazy">
+          <figcaption>The main Make.com scenario: Tally form, tidy the fields, OpenAI writes the reply, WhatsApp sends it, Airtable logs the lead, Telegram tells the agent.</figcaption>
+        </figure>
+        <div class="shots-2">
+          <figure class="shot fi">
+            <img src="assets/work/re-whatsapp.jpg" alt="WhatsApp message confirming a property consultation with a date, time and reschedule link" width="900" height="543" loading="lazy">
+            <figcaption>What the buyer gets after booking: a WhatsApp confirmation with the time and a link to reschedule.</figcaption>
+          </figure>
+          <figure class="shot fi">
+            <img src="assets/work/re-telegram.jpg" alt="Telegram new lead alert listing intent, property type, budget, timeline and preferred area" width="900" height="462" loading="lazy">
+            <figcaption>What the agent gets: a Telegram summary of the lead seconds after the form is sent. Phone number hidden.</figcaption>
+          </figure>
+        </div>
+        <figure class="shot light fi">
+          <img src="assets/work/re-crm.jpg" alt="Airtable Kanban board with columns New, Contacted, Viewing Booked and Closed" width="1600" height="384" loading="lazy">
+          <figcaption>The agent's Airtable board. Leads move from New to Contacted to Viewing Booked by themselves; the agent moves them to Closed. Test data.</figcaption>
+        </figure>
+      </div>
+
+      <div class="case-body">
+        <div class="fi">
+          <h3>How it works</h3>
+          <ol class="points">
+            <li><b>One form link everywhere.</b> The agent puts a single Tally link in their Instagram bio, Facebook ads, PropertyGuru listings and on flyers as a QR code. It asks whether they want to buy, rent or invest, plus property type, budget, timeline and area.</li>
+            <li><b>Instant trigger.</b> A new submission starts the Make.com scenario straight away, not on a timer.</li>
+            <li><b>A reply that reads like a person.</b> OpenAI writes a short WhatsApp message: greets them by first name, confirms what they're looking for in one sentence, says the agent will be in touch and includes a Calendly link.</li>
+            <li><b>Send, log, alert.</b> The message goes out through the WhatsApp API, the lead is saved in Airtable, and the agent gets a Telegram summary on their phone.</li>
+            <li><b>Chase the quiet ones once.</b> A second scenario runs every morning. Anyone still marked New after 24 hours without a booking gets a follow-up and is moved to Contacted, so nobody is messaged twice.</li>
+            <li><b>Bookings handle themselves.</b> A third scenario watches Calendly. A booking marks the lead as Viewing Booked, sends a WhatsApp confirmation and a reminder two hours before.</li>
+          </ol>
+        </div>
+        <aside class="fi">
+          <h3>Built with</h3>
+          <ul class="stack">
+            <li>Make.com</li><li>Tally</li><li>OpenAI</li><li>Twilio (WhatsApp)</li><li>Airtable</li><li>Telegram Bot API</li><li>Calendly</li>
+          </ul>
+          <p class="note">Packaged as a productised service for property agents.</p>
+        </aside>
+      </div>
+    </div>
+  </article>
+
+  <!-- 03 NEGOTIATION -->
   <article class="case" id="negotiation">
     <div class="wrap">
-      <p class="case-meta fi"><b>01</b> &nbsp;Procurement &middot; Durian retail &middot; 2026</p>
+      <p class="case-meta fi"><b>03</b> &nbsp;Procurement &middot; Durian retail &middot; 2026</p>
       <h2 class="fi">Multi-agent negotiation system</h2>
       <p class="lede fi">
         Two AI agents negotiate a bulk order of Mao Shan Wang durians. One buys for Durian Paradise, the other sells for a plantation.
@@ -213,10 +344,10 @@
     </div>
   </article>
 
-  <!-- 02 LIFECYCLE -->
+  <!-- 04 LIFECYCLE -->
   <article class="case" id="lifecycle">
     <div class="wrap">
-      <p class="case-meta fi"><b>02</b> &nbsp;Enterprise &middot; 2026</p>
+      <p class="case-meta fi"><b>04</b> &nbsp;Enterprise &middot; 2026</p>
       <h2 class="fi">Lead-to-support lifecycle automation</h2>
       <p class="lede fi">
         Every enquiry, whether it comes in as a phone call, a web form or a WhatsApp message, goes through one n8n workflow.
@@ -267,10 +398,10 @@
     </div>
   </article>
 
-  <!-- 03 VOICE -->
+  <!-- 05 VOICE -->
   <article class="case" id="voice">
     <div class="wrap">
-      <p class="case-meta fi"><b>03</b> &nbsp;Healthcare clinic &middot; 2026</p>
+      <p class="case-meta fi"><b>05</b> &nbsp;Healthcare clinic &middot; 2026</p>
       <h2 class="fi">AI voice agent for lead follow-up</h2>
       <p class="lede fi">
         When someone asks a clinic about an appointment, they get a personal WhatsApp and email within a minute, then a phone call
@@ -327,72 +458,10 @@
     </div>
   </article>
 
-  <!-- 04 PROPERTY -->
-  <article class="case" id="property">
-    <div class="wrap">
-      <p class="case-meta fi"><b>04</b> &nbsp;Real estate &middot; 2025</p>
-      <h2 class="fi">Multi-stage lead pipeline for property agents</h2>
-      <p class="lede fi">
-        A buyer fills in an enquiry form at 10 pm. The agent is at a viewing and replies the next morning, by which time the buyer
-        has called three other agents. This system replies on WhatsApp within a minute, any time of day, tells the agent on Telegram,
-        logs the lead and follows up with anyone who goes quiet.
-      </p>
-
-      <div class="facts fi">
-        <div class="fact"><div class="fact-n">&lt;60s</div><div class="fact-l">to the first WhatsApp reply</div></div>
-        <div class="fact"><div class="fact-n">3</div><div class="fact-l">Make.com scenarios</div></div>
-        <div class="fact"><div class="fact-n">24h</div><div class="fact-l">until an automatic follow-up</div></div>
-        <div class="fact"><div class="fact-n">2h</div><div class="fact-l">reminder before each viewing</div></div>
-      </div>
-
-      <div class="shots">
-        <figure class="shot light fi">
-          <img src="assets/work/re-make.jpg" alt="Make.com scenario: Tally form, set variables, OpenAI, Twilio WhatsApp request, Airtable record and Telegram message" width="1600" height="441" loading="lazy">
-          <figcaption>The main Make.com scenario: Tally form, tidy the fields, OpenAI writes the reply, WhatsApp sends it, Airtable logs the lead, Telegram tells the agent.</figcaption>
-        </figure>
-        <div class="shots-2">
-          <figure class="shot fi">
-            <img src="assets/work/re-whatsapp.jpg" alt="WhatsApp message confirming a property consultation with a date, time and reschedule link" width="900" height="543" loading="lazy">
-            <figcaption>What the buyer gets after booking: a WhatsApp confirmation with the time and a link to reschedule.</figcaption>
-          </figure>
-          <figure class="shot fi">
-            <img src="assets/work/re-telegram.jpg" alt="Telegram new lead alert listing intent, property type, budget, timeline and preferred area" width="900" height="462" loading="lazy">
-            <figcaption>What the agent gets: a Telegram summary of the lead seconds after the form is sent. Phone number hidden.</figcaption>
-          </figure>
-        </div>
-        <figure class="shot light fi">
-          <img src="assets/work/re-crm.jpg" alt="Airtable Kanban board with columns New, Contacted, Viewing Booked and Closed" width="1600" height="384" loading="lazy">
-          <figcaption>The agent's Airtable board. Leads move from New to Contacted to Viewing Booked by themselves; the agent moves them to Closed. Test data.</figcaption>
-        </figure>
-      </div>
-
-      <div class="case-body">
-        <div class="fi">
-          <h3>How it works</h3>
-          <ol class="points">
-            <li><b>One form link everywhere.</b> The agent puts a single Tally link in their Instagram bio, Facebook ads, PropertyGuru listings and on flyers as a QR code. It asks whether they want to buy, rent or invest, plus property type, budget, timeline and area.</li>
-            <li><b>Instant trigger.</b> A new submission starts the Make.com scenario straight away, not on a timer.</li>
-            <li><b>A reply that reads like a person.</b> OpenAI writes a short WhatsApp message: greets them by first name, confirms what they're looking for in one sentence, says the agent will be in touch and includes a Calendly link.</li>
-            <li><b>Send, log, alert.</b> The message goes out through the WhatsApp API, the lead is saved in Airtable, and the agent gets a Telegram summary on their phone.</li>
-            <li><b>Chase the quiet ones once.</b> A second scenario runs every morning. Anyone still marked New after 24 hours without a booking gets a follow-up and is moved to Contacted, so nobody is messaged twice.</li>
-            <li><b>Bookings handle themselves.</b> A third scenario watches Calendly. A booking marks the lead as Viewing Booked, sends a WhatsApp confirmation and a reminder two hours before.</li>
-          </ol>
-        </div>
-        <aside class="fi">
-          <h3>Built with</h3>
-          <ul class="stack">
-            <li>Make.com</li><li>Tally</li><li>OpenAI</li><li>Twilio (WhatsApp)</li><li>Airtable</li><li>Telegram Bot API</li><li>Calendly</li>
-          </ul>
-          <p class="note">Packaged as a productised service for property agents.</p>
-        </aside>
-      </div>
-    </div>
-  </article>
-
-  <!-- 05 ZYPHER -->
+  <!-- 06 ZYPHER -->
   <article class="case" id="support">
     <div class="wrap">
-      <p class="case-meta fi"><b>05</b> &nbsp;SaaS &middot; Shopify app &middot; 2025&ndash;26</p>
+      <p class="case-meta fi"><b>06</b> &nbsp;SaaS &middot; Shopify app &middot; 2025&ndash;26</p>
       <h2 class="fi">Zypher, an AI support agent for Shopify stores</h2>
       <p class="lede fi">
         A Shopify app that adds a support assistant to a store. It reads that store's own policies and pages, so when a customer
@@ -445,12 +514,12 @@
 
 <section id="contact" class="cta on-night">
   <div class="wrap cta-inner">
-    <h2 class="fi">Let's look at <span class="serif">your</span> workflow.</h2>
+    <h2 class="fi">See it answer <span class="serif">your</span> listing.</h2>
     <div class="fi">
-      <p>Book a free 20-minute call. We'll look at one process and tell you honestly what we'd automate, and what we'd leave alone.</p>
+      <p>Send us one of your listings. On a free 20-minute demo, we'll show you the agent answering buyer questions about it.</p>
       <div class="actions">
-        <a href="https://wa.me/6590183930" class="btn btn-gold">WhatsApp us <span class="arr">&rarr;</span></a>
-        <a href="mailto:inquiry@coldtogoldsg.com" class="btn btn-ghost">Email us</a>
+        <a href="https://wa.me/6590183930?text=Hi%20Everrun%2C%20I%27m%20a%20property%20agent%20and%20I%27d%20like%20a%20demo%20of%20the%20AI%20agent." class="btn btn-gold">WhatsApp us <span class="arr">&rarr;</span></a>
+        <a href="mailto:inquiry@coldtogoldsg.com?subject=Demo%20of%20the%20Everrun%20property%20agent" class="btn btn-ghost">Email us</a>
       </div>
     </div>
   </div>
@@ -461,15 +530,15 @@
     <div class="ft-grid">
       <div class="ft-brand">
         <a href="index.html" class="wordmark">everrun<span class="wm-dot">.</span></a>
-        <p>AI automation for growing businesses. Based in Singapore.</p>
+        <p>AI agents for Singapore property agents.</p>
       </div>
       <div class="ft-col">
         <h4>Explore</h4>
         <ul>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#services">Services</a></li>
-          <li><a href="index.html#pricing">Pricing</a></li>
-          <li><a href="work.html">Our work</a></li>
+          <li><a href="index.html#conversation">See it work</a></li>
+          <li><a href="index.html#failsafes">Failsafes</a></li>
+          <li><a href="index.html#projects">Other projects</a></li>
+          <li><a href="work.html">All case studies</a></li>
         </ul>
       </div>
       <div class="ft-col">
